@@ -1,0 +1,47 @@
+version: '3.1'
+
+services:
+
+  db_postgres:
+    image: postgres
+    restart: always
+    environment:
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_DB: postgres    
+    volumes:
+      - ./dbfiles:/docker-entrypoint-initdb.d
+      - /var/lib/postgres_data:/var/lib/postgresql/data
+    networks:
+      - web_net
+    hostname: servidor_postgres
+
+  adminer:
+    image: adminer
+    restart: always
+    depends_on: 
+      - db_postgres
+    ports:
+       - 9090:8080
+    networks:
+      - web_net
+    hostname: servidor_adminer
+
+  wildfly:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    links: 
+      - db_postgres
+    ports:
+      - 8080:8080
+      - 9990:9990
+    networks:
+      - web_net
+    hostname: servidor_ms
+networks:
+    web_net:
+        driver: bridge

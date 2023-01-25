@@ -1,0 +1,80 @@
+2022-12-16 03:59:23,456 INFO  [stdout] (default task-1) Hibernate: select producto0_.prod_codigo as prod_cod1_0_, producto0_.prod_fechregi as prod_fec2_0_, producto0_.prod_nombre as prod_nom3_0_, producto0_.prod_pvp as prod_pvp4_0_, producto0_.prod_stock as prod_sto5_0_ from public.producto producto0_
+2022-12-16 03:59:31,628 INFO  [stdout] (default task-1) Hibernate: select cliente0_.clie_numeident as clie_num1_0_, cliente0_.clie_celular as clie_cel2_0_, cliente0_.clie_direccion as clie_dir3_0_, cliente0_.clie_email as clie_ema4_0_, cliente0_.clie_fechregi as clie_fec5_0_, cliente0_.clie_fonoconext as clie_fon6_0_, cliente0_.clie_fonoconv as clie_fon7_0_, cliente0_.clie_nombres as clie_nom8_0_, cliente0_.clie_tipo as clie_tip9_0_, cliente0_.clie_tipoident as clie_ti10_0_ from public.cliente cliente0_
+2022-12-16 03:59:33,699 INFO  [stdout] (default task-1) Hibernate: select transactio0_.codigo as codigo1_0_, transactio0_.amount as amount2_0_, transactio0_.channel as channel3_0_, transactio0_.description as descript4_0_, transactio0_.fechregi as fechregi5_0_, transactio0_.fee as fee6_0_, transactio0_.tipo as tipo7_0_ from public.transaction transactio0_
+2022-12-16 03:59:37,888 INFO  [stdout] (default task-1) Hibernate: select cliente0_.clie_numeident as clie_num1_0_, cliente0_.clie_celular as clie_cel2_0_, cliente0_.clie_direccion as clie_dir3_0_, cliente0_.clie_email as clie_ema4_0_, cliente0_.clie_fechregi as clie_fec5_0_, cliente0_.clie_fonoconext as clie_fon6_0_, cliente0_.clie_fonoconv as clie_fon7_0_, cliente0_.clie_nombres as clie_nom8_0_, cliente0_.clie_tipo as clie_tip9_0_, cliente0_.clie_tipoident as clie_ti10_0_ from public.cliente cliente0_
+2022-12-16 08:22:03,732 INFO  [stdout] (default task-1) Hibernate: select producto0_.prod_codigo as prod_cod1_0_, producto0_.prod_fechregi as prod_fec2_0_, producto0_.prod_nombre as prod_nom3_0_, producto0_.prod_pvp as prod_pvp4_0_, producto0_.prod_stock as prod_sto5_0_ from public.producto producto0_
+2022-12-16 08:22:15,212 INFO  [stdout] (default task-1) Hibernate: select cliente0_.clie_numeident as clie_num1_0_, cliente0_.clie_celular as clie_cel2_0_, cliente0_.clie_direccion as clie_dir3_0_, cliente0_.clie_email as clie_ema4_0_, cliente0_.clie_fechregi as clie_fec5_0_, cliente0_.clie_fonoconext as clie_fon6_0_, cliente0_.clie_fonoconv as clie_fon7_0_, cliente0_.clie_nombres as clie_nom8_0_, cliente0_.clie_tipo as clie_tip9_0_, cliente0_.clie_tipoident as clie_ti10_0_ from public.cliente cliente0_
+2022-12-16 08:22:19,021 INFO  [stdout] (default task-1) Hibernate: select transactio0_.codigo as codigo1_0_, transactio0_.amount as amount2_0_, transactio0_.channel as channel3_0_, transactio0_.description as descript4_0_, transactio0_.fechregi as fechregi5_0_, transactio0_.fee as fee6_0_, transactio0_.tipo as tipo7_0_ from public.transaction transactio0_
+2022-12-16 08:22:24,267 INFO  [stdout] (default task-1) Hibernate: select producto0_.prod_codigo as prod_cod1_0_, producto0_.prod_fechregi as prod_fec2_0_, producto0_.prod_nombre as prod_nom3_0_, producto0_.prod_pvp as prod_pvp4_0_, producto0_.prod_stock as prod_sto5_0_ from public.producto producto0_
+2022-12-16 11:03:03,651 INFO  [stdout] (default task-1) Hibernate: select cliente0_.clie_numeident as clie_num1_0_, cliente0_.clie_celular as clie_cel2_0_, cliente0_.clie_direccion as clie_dir3_0_, cliente0_.clie_email as clie_ema4_0_, cliente0_.clie_fechregi as clie_fec5_0_, cliente0_.clie_fonoconext as clie_fon6_0_, cliente0_.clie_fonoconv as clie_fon7_0_, cliente0_.clie_nombres as clie_nom8_0_, cliente0_.clie_tipo as clie_tip9_0_, cliente0_.clie_tipoident as clie_ti10_0_ from public.cliente cliente0_
+2022-12-16 11:04:06,837 INFO  [stdout] (default task-1) Hibernate: select cliente0_.clie_numeident as clie_num1_0_0_, cliente0_.clie_celular as clie_cel2_0_0_, cliente0_.clie_direccion as clie_dir3_0_0_, cliente0_.clie_email as clie_ema4_0_0_, cliente0_.clie_fechregi as clie_fec5_0_0_, cliente0_.clie_fonoconext as clie_fon6_0_0_, cliente0_.clie_fonoconv as clie_fon7_0_0_, cliente0_.clie_nombres as clie_nom8_0_0_, cliente0_.clie_tipo as clie_tip9_0_0_, cliente0_.clie_tipoident as clie_ti10_0_0_ from public.cliente cliente0_ where cliente0_.clie_numeident=?
+2022-12-16 11:04:47,987 ERROR [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-1) RESTEASY002010: Failed to execute: javax.ws.rs.NotSupportedException: RESTEASY003065: Cannot consume content type
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:493)
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:174)
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:47)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:442)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:300)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:221)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:135)
+	at org.jboss.resteasy.core.interception.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:355)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:138)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:215)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:227)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at io.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:55)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.MetricsHandler.handleRequest(MetricsHandler.java:64)
+	at io.undertow.servlet.core.MetricsChainHandler.handleRequest(MetricsChainHandler.java:59)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-12-16 11:08:46,527 INFO  [stdout] (default task-1) Hibernate: select cliente0_.clie_numeident as clie_num1_0_0_, cliente0_.clie_celular as clie_cel2_0_0_, cliente0_.clie_direccion as clie_dir3_0_0_, cliente0_.clie_email as clie_ema4_0_0_, cliente0_.clie_fechregi as clie_fec5_0_0_, cliente0_.clie_fonoconext as clie_fon6_0_0_, cliente0_.clie_fonoconv as clie_fon7_0_0_, cliente0_.clie_nombres as clie_nom8_0_0_, cliente0_.clie_tipo as clie_tip9_0_0_, cliente0_.clie_tipoident as clie_ti10_0_0_ from public.cliente cliente0_ where cliente0_.clie_numeident=?
+2022-12-16 11:08:46,534 INFO  [stdout] (default task-1) Hibernate: insert into public.cliente (clie_celular, clie_direccion, clie_email, clie_fechregi, clie_fonoconext, clie_fonoconv, clie_nombres, clie_tipo, clie_tipoident, clie_numeident) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-16 11:09:00,129 INFO  [stdout] (default task-1) Hibernate: select cliente0_.clie_numeident as clie_num1_0_, cliente0_.clie_celular as clie_cel2_0_, cliente0_.clie_direccion as clie_dir3_0_, cliente0_.clie_email as clie_ema4_0_, cliente0_.clie_fechregi as clie_fec5_0_, cliente0_.clie_fonoconext as clie_fon6_0_, cliente0_.clie_fonoconv as clie_fon7_0_, cliente0_.clie_nombres as clie_nom8_0_, cliente0_.clie_tipo as clie_tip9_0_, cliente0_.clie_tipoident as clie_ti10_0_ from public.cliente cliente0_
+2022-12-16 14:08:34,110 INFO  [stdout] (default task-1) Hibernate: select cliente0_.clie_numeident as clie_num1_0_, cliente0_.clie_celular as clie_cel2_0_, cliente0_.clie_direccion as clie_dir3_0_, cliente0_.clie_email as clie_ema4_0_, cliente0_.clie_fechregi as clie_fec5_0_, cliente0_.clie_fonoconext as clie_fon6_0_, cliente0_.clie_fonoconv as clie_fon7_0_, cliente0_.clie_nombres as clie_nom8_0_, cliente0_.clie_tipo as clie_tip9_0_, cliente0_.clie_tipoident as clie_ti10_0_ from public.cliente cliente0_

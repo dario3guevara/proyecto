@@ -1,0 +1,74 @@
+version: '3.1'
+
+services:
+
+  db_postgres:
+    image: postgres
+    restart: always
+    environment:
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_DB: postgres    
+    volumes:
+      - ./dbfiles:/docker-entrypoint-initdb.d
+      - /var/lib/postgres_data:/var/lib/postgresql/data
+    networks:
+      - web_net
+    hostname: servidor_postgres
+
+  adminer:
+    image: adminer
+    restart: always
+    depends_on: 
+      - db_postgres
+    ports:
+       - 9090:8080
+    networks:
+      - web_net
+    hostname: servidor_adminer
+
+  wildfly_crm:
+    build:
+      context: ./crm
+      dockerfile: Dockerfile
+    links: 
+      - db_postgres
+    ports:
+      - 8080:8080
+      - 9990:9990
+    networks:
+      - web_net
+    hostname: servidor_mscrm
+  
+  wildfly_transaction:
+    build:
+      context: ./transaction
+      dockerfile: Dockerfile
+    links:
+      - db_postgres
+    ports:
+      - 6060:8080
+      - 9960:9990
+    networks:
+      - web_net
+    hostname: servidor_mstransaction
+
+  wildfly_inventory:
+    build:
+      context: ./inventory
+      dockerfile: Dockerfile
+    links:
+      - db_postgres
+    ports:
+      - 7070:8080
+      - 9970:9990
+    networks:
+      - web_net
+    hostname: servidor_msinventory
+
+networks:
+    web_net:
+        driver: bridge

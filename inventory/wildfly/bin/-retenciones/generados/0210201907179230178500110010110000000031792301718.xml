@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<comprobanteRetencion id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>1</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>QUINCHETRUCK S.A</razonSocial>
+        <nombreComercial>COMPAÑIA DE TRANSPORTE COMERCIAL DE CARGA PESADA QUINCHETRUCK S.A.</nombreComercial>
+        <ruc>1792301785001</ruc>
+        <claveAcceso>0210201907179230178500110010110000000031792301718</claveAcceso>
+        <codDoc>07</codDoc>
+        <estab>001</estab>
+        <ptoEmi>011</ptoEmi>
+        <secuencial>000000003</secuencial>
+        <dirMatriz>EL QUINCHE PANAMERICANA NORTE S/N Y VIA SAN MIGUEL</dirMatriz>
+    </infoTributaria>
+    <infoCompRetencion>
+        <fechaEmision>02/10/2019</fechaEmision>
+        <dirEstablecimiento>EL QUINCHE, SECTOR EL GUANTO SN Y SECUNDARIA</dirEstablecimiento>
+        <obligadoContabilidad>SI</obligadoContabilidad>
+        <tipoIdentificacionSujetoRetenido>04</tipoIdentificacionSujetoRetenido>
+        <razonSocialSujetoRetenido>MARCEMILITRANS S.A.</razonSocialSujetoRetenido>
+        <identificacionSujetoRetenido>1792529417001</identificacionSujetoRetenido>
+        <periodoFiscal>10/2019</periodoFiscal>
+    </infoCompRetencion>
+    <impuestos>
+        <impuesto>
+            <codigo>1</codigo>
+            <codigoRetencion>310</codigoRetencion>
+            <baseImponible>8000.00</baseImponible>
+            <porcentajeRetener>1.00</porcentajeRetener>
+            <valorRetenido>80.00</valorRetenido>
+            <codDocSustento>01</codDocSustento>
+            <numDocSustento>001001000000536</numDocSustento>
+            <fechaEmisionDocSustento>30/09/2019</fechaEmisionDocSustento>
+        </impuesto>
+    </impuestos>
+    <infoAdicional>
+        <campoAdicional nombre="Dirección">PICHINCHA / MEJIA / ALOASI / PANAMERICANA SUR S/N</campoAdicional>
+        <campoAdicional nombre="Teléfono">3658618 ext. 000</campoAdicional>
+        <campoAdicional nombre="Email">zedisonmarcelo@rocketmail.com</campoAdicional>
+    </infoAdicional>
+</comprobanteRetencion>
